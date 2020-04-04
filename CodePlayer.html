@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+   <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+   <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   
+   <title>Code Editor</title>
+</head>
+<body>
+   <div id="header">
+        <h2 id="header-text">Code Player</h2>
+       <div class="container">
+
+      <div id="Tabs">
+         <div  class="btn bl active" id="html">HTML</div>
+         <div class="btn" id="css">CSS</div>
+         <div class="btn" id="js">JavaScript</div>
+         <div class="btn br active" id="output">Output</div>
+   </div>
+</div>
+  <div class="clear"></div>
+   <div class="ctn">
+
+    <textarea class="panel" id="htmlp"><p id="paragraph">hello world</p></textarea>
+    <textarea class="panel hidden" id="cssp">p { color: green; }</textarea>
+    <textarea class="panel hidden" id="jsp">document.getElementById("paragraph").innerHTML = "Hello Waseh!"</textarea>
+    <iframe class="panel" id="outputp"></iframe>
+   </div>
+   
+</div> 
+
+   <script src="script.js"></script>
+   
+</body>
+</html>
